@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tbustama/tbustma.github.io/static/css/main.33597d54.css",
-    "main.js": "/tbustama/tbustma.github.io/static/js/main.f174f502.js",
-    "static/js/592.d7a7b80c.chunk.js": "/tbustama/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
-    "index.html": "/tbustama/tbustma.github.io/index.html",
-    "main.33597d54.css.map": "/tbustama/tbustma.github.io/static/css/main.33597d54.css.map",
-    "main.f174f502.js.map": "/tbustama/tbustma.github.io/static/js/main.f174f502.js.map",
-    "592.d7a7b80c.chunk.js.map": "/tbustama/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
+    "main.css": "/tbustma.github.io/static/css/main.33597d54.css",
+    "main.js": "/tbustma.github.io/static/js/main.2c63ddf8.js",
+    "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
+    "index.html": "/tbustma.github.io/index.html",
+    "main.33597d54.css.map": "/tbustma.github.io/static/css/main.33597d54.css.map",
+    "main.2c63ddf8.js.map": "/tbustma.github.io/static/js/main.2c63ddf8.js.map",
+    "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33597d54.css",
-    "static/js/main.f174f502.js"
+    "static/js/main.2c63ddf8.js"
   ]
 }
