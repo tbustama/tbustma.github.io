@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+nav {
+  padding: 40px !important;
+}
+.garamond {
+  font-family: "EB Garamond", serif;
+  color: rgb(123, 109, 109);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.seasons {
+  font-family: "Spectral", serif;
+}
+.seasons-it {
+  font-family: "Spectral", serif;
+  font-style: italic;
+}
+.cinzel {
+  font-family: "Cinzel Decorative", serif;
+}
+nav {
+  font-size: 11px !important;
+}
+.mt-nav {
+  margin-top: 130px;
+}
+.logo {
+  height: 50px;
+  padding-right: 2rem;
+  font-size: 32px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.space-between {
+  justify-content: space-around;
+  align-self: stretch;
+  width: 100%;
+}
+
+.d-lg-flex > * {
+  flex: 1;
+}
+.sorry {
+  display: none;
+}
+
+.grid-4,
+.grid-3 {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+@media (min-width: 576px) {
+  .d-sm-flex > * {
+    max-width: 50%;
+  }
+  nav {
+    padding: 40px 100px !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 992px) {
+  .sorry {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (min-width: 1200px) {
+  section {
+    padding-inline: 10%;
+    padding-block: 2rem;
+  }
+  .d-sm-flex > * {
+    max-width: 33%;
   }
 }
