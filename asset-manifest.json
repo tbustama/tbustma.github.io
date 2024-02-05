@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.d4c652ee.css",
-    "main.js": "/tbustma.github.io/static/js/main.5c83f119.js",
-    "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
-    "index.html": "/tbustma.github.io/index.html",
-    "main.d4c652ee.css.map": "/tbustma.github.io/static/css/main.d4c652ee.css.map",
-    "main.5c83f119.js.map": "/tbustma.github.io/static/js/main.5c83f119.js.map",
-    "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
+    "main.css": "/static/css/main.d4c652ee.css",
+    "main.js": "/static/js/main.16255f1a.js",
+    "static/js/592.d7a7b80c.chunk.js": "/static/js/592.d7a7b80c.chunk.js",
+    "index.html": "/index.html",
+    "main.d4c652ee.css.map": "/static/css/main.d4c652ee.css.map",
+    "main.16255f1a.js.map": "/static/js/main.16255f1a.js.map",
+    "592.d7a7b80c.chunk.js.map": "/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4c652ee.css",
-    "static/js/main.5c83f119.js"
+    "static/js/main.16255f1a.js"
   ]
 }
