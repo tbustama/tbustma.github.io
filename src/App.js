@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import ReactPlayer from "react-player";
 function App() {
+  const [modalSource, setModalSource] = useState("");
   const videoRef = useRef(undefined);
   const buttonRef = useRef(undefined);
   useEffect(() => {
@@ -21,6 +22,10 @@ function App() {
         element.classList.remove("collapsing");
       }, 300);
     }
+  };
+
+  const handleImage = (e) => {
+    setModalSource(e.target.src);
   };
   return (
     <div className="App">
@@ -64,7 +69,12 @@ function App() {
                 <a class="nav-link" href="#FAQs" onClick={handleClick}>
                   FAQs
                 </a>
-                <a class="nav-link" href="#" onClick={handleClick}>
+                <a
+                  class="nav-link"
+                  href="https://overthemoon.com/apps/registry/petrusha-bustamante-54b2"
+                  target="_blank"
+                  onClick={handleClick}
+                >
                   REGISTRY
                 </a>
                 <a class="nav-link" href="#Gallery" onClick={handleClick}>
@@ -240,9 +250,9 @@ function App() {
         <section>
           <div class="d-sm-flex flex-wrap space-between text-center px-5">
             <div class="p-4">
-              <h3 class="seasons">
+              <h4 class="seasons">
                 WHERE ARE THE CEREMONY & RECEPTION TAKING PLACE?
-              </h3>
+              </h4>
               <p class="garamond">
                 The Ceremony and Reception will both take place at Rancho
                 Shibumi, a private property in Todos Santos, about 15 minutes
@@ -251,7 +261,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">AM I ALLOWED TO BRING A GUEST?</h3>
+              <h4 class="seasons">AM I ALLOWED TO BRING A GUEST?</h4>
               <p class="garamond">
                 Due to limited space, we are only able to accommodate those
                 guests formally invited on your wedding invitation. If you
@@ -260,7 +270,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">WILL TRANSPORTATION BE PROVIDED?</h3>
+              <h4 class="seasons">WILL TRANSPORTATION BE PROVIDED?</h4>
               <p class="garamond">
                 Yes! We have a shuttle leaving from the Corazón Cabo Resort and
                 Spa to and from the venue on Sunday, March 9th. Please check
@@ -269,7 +279,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">PASSPORTS</h3>
+              <h4 class="seasons">PASSPORTS</h4>
               <p class="garamond">
                 Do not forget your passport! Please double check to make sure
                 your passport does not expire before September 2024 as you will
@@ -280,7 +290,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">WHAT IS THE DRESS CODE?</h3>
+              <h4 class="seasons">WHAT IS THE DRESS CODE?</h4>
               <p class="garamond">
                 We would love to see our family & friends get dressed up for our
                 big day! Dress code is formal attire for the evening. Gentlemen,
@@ -289,7 +299,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">GIFTS</h3>
+              <h4 class="seasons">GIFTS</h4>
               <p class="garamond">
                 We are truly grateful for your presence on our special day, and
                 your love and support mean the world to us. Your attendance is
@@ -298,7 +308,7 @@ function App() {
               </p>
             </div>
             <div class="p-4">
-              <h3 class="seasons">WHEN IS THE RSVP DEADLINE?</h3>
+              <h4 class="seasons">WHEN IS THE RSVP DEADLINE?</h4>
               <p class="garamond" id="Gallery">
                 Please RSVP no later than January 1st, 2025. RSVP instructions
                 will be given in the formal invitation. We can’t wait to
@@ -315,6 +325,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row1pic1.png"}
                   alt="row1"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -322,6 +335,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row1pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -329,6 +345,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row1pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -337,6 +356,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row1pic4.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
@@ -346,6 +368,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row2pic1.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -353,6 +378,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row2pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -360,6 +388,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row2pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
@@ -369,6 +400,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row3pic1.png"}
                   alt="row3"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -376,6 +410,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row3pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -383,6 +420,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row3pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -391,6 +431,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row3pic4.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
@@ -400,6 +443,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row4pic1.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -407,6 +453,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row4pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -414,6 +463,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row4pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
@@ -423,6 +475,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row5pic1.png"}
                   alt="row3"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -430,6 +485,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row5pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -437,6 +495,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row5pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-6">
@@ -445,6 +506,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row5pic4.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
@@ -454,6 +518,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row6pic1.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -461,6 +528,9 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row6pic2.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
               <div class="p-2 g-col-4">
@@ -468,11 +538,42 @@ function App() {
                   src={process.env.PUBLIC_URL + "/row6pic3.png"}
                   alt="reception"
                   width="90%"
+                  onClick={(e) => handleImage(e)}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
                 />
               </div>
             </div>
           </div>
         </section>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div>
+                <img
+                  id="Modal-Image"
+                  src={modalSource}
+                  alt="reception"
+                  width="100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  id="modal-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer></footer>
     </div>
