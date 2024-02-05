@@ -3,10 +3,25 @@ import "./App.css";
 import ReactPlayer from "react-player";
 function App() {
   const videoRef = useRef(undefined);
+  const buttonRef = useRef(undefined);
   useEffect(() => {
     videoRef.current.defaultMuted = true;
     videoRef.current.play = true;
   });
+
+  const handleClick = () => {
+    if (!buttonRef.current.classList.contains("collapsed")) {
+      buttonRef.current.classList.add("collapsed");
+      const element = document.getElementById("navbarNavAltMarkup");
+      element.classList.remove("collapse");
+      element.classList.remove("show");
+      element.classList.add("collapsing");
+      setTimeout(() => {
+        element.classList.add("collapse");
+        element.classList.remove("collapsing");
+      }, 300);
+    }
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -16,6 +31,7 @@ function App() {
         >
           <div class="container-fluid">
             <button
+              ref={buttonRef}
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -28,25 +44,30 @@ function App() {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav space-between">
-                <a class="nav-link" aria-current="page" href="#">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={handleClick}
+                >
                   HOME
                 </a>
-                <a class="nav-link" href="#OurStory">
+                <a class="nav-link" href="#OurStory" onClick={handleClick}>
                   OUR STORY
                 </a>
-                <a class="nav-link" href="#" target="_blank">
+                <a class="nav-link" href="#Event" onClick={handleClick}>
                   EVENT DETAILS
                 </a>
-                <a class="nav-link" href="#Travel">
+                <a class="nav-link" href="#Travel" onClick={handleClick}>
                   TRAVEL & STAY
                 </a>
-                <a class="nav-link" href="#FAQs">
+                <a class="nav-link" href="#FAQs" onClick={handleClick}>
                   FAQs
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" onClick={handleClick}>
                   REGISTRY
                 </a>
-                <a class="nav-link" href="#Gallery">
+                <a class="nav-link" href="#Gallery" onClick={handleClick}>
                   GALLERY
                 </a>
               </div>
@@ -112,6 +133,7 @@ function App() {
                 Taylor and Kendall spend the rest of the evening flirting and
                 dancing, and from that moment on, the rest is history!{" "}
               </p>
+              <div id="Event"></div>
             </div>
           </div>
         </section>
@@ -277,7 +299,7 @@ function App() {
             </div>
             <div class="p-4">
               <h3 class="seasons">WHEN IS THE RSVP DEADLINE?</h3>
-              <p class="garamond">
+              <p class="garamond" id="Gallery">
                 Please RSVP no later than January 1st, 2025. RSVP instructions
                 will be given in the formal invitation. We can’t wait to
                 celebrate our love with you!
@@ -286,39 +308,168 @@ function App() {
           </div>
         </section>
         <section>
-          <div id="Gallery">
+          <div>
             <div class="grid-4 text-center">
-              <div class="p-2 g-col-6">Grid item 1</div>
-              <div class="p-2 g-col-6">Grid item 2</div>
-              <div class="p-2 g-col-6">Grid item 3</div>
-              <div class="p-2 g-col-6">Grid item 4</div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row1pic1.png"}
+                  alt="row1"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row1pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row1pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                {" "}
+                <img
+                  src={process.env.PUBLIC_URL + "/row1pic4.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">Grid item 1</div>
-              <div class="p-2 g-col-4">Grid item 2</div>
-              <div class="p-2 g-col-4">Grid item 3</div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row2pic1.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row2pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row2pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="grid-4 text-center">
-              <div class="p-2 g-col-6">Grid item 1</div>
-              <div class="p-2 g-col-6">Grid item 2</div>
-              <div class="p-2 g-col-6">Grid item 3</div>
-              <div class="p-2 g-col-6">Grid item 4</div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row3pic1.png"}
+                  alt="row3"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row3pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row3pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                {" "}
+                <img
+                  src={process.env.PUBLIC_URL + "/row3pic4.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">Grid item 1</div>
-              <div class="p-2 g-col-4">Grid item 2</div>
-              <div class="p-2 g-col-4">Grid item 3</div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row4pic1.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row4pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row4pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="grid-4 text-center">
-              <div class="p-2 g-col-6">Grid item 1</div>
-              <div class="p-2 g-col-6">Grid item 2</div>
-              <div class="p-2 g-col-6">Grid item 3</div>
-              <div class="p-2 g-col-6">Grid item 4</div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row5pic1.png"}
+                  alt="row3"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row5pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                <img
+                  src={process.env.PUBLIC_URL + "/row5pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-6">
+                {" "}
+                <img
+                  src={process.env.PUBLIC_URL + "/row5pic4.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">Grid item 1</div>
-              <div class="p-2 g-col-4">Grid item 2</div>
-              <div class="p-2 g-col-4">Grid item 3</div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row6pic1.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row6pic2.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
+              <div class="p-2 g-col-4">
+                <img
+                  src={process.env.PUBLIC_URL + "/row6pic3.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
           </div>
         </section>
