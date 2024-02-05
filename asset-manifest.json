@@ -1,15 +1,41 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.fe76596c.css",
-    "main.js": "/tbustma.github.io/static/js/main.7d0750f0.js",
+    "main.css": "/tbustma.github.io/static/css/main.f5bf322d.css",
+    "main.js": "/tbustma.github.io/static/js/main.c69da036.js",
+    "reactPlayerYouTube.js": "/tbustma.github.io/static/js/reactPlayerYouTube.e249679c.chunk.js",
+    "reactPlayerSoundCloud.js": "/tbustma.github.io/static/js/reactPlayerSoundCloud.532622db.chunk.js",
+    "reactPlayerVimeo.js": "/tbustma.github.io/static/js/reactPlayerVimeo.79b9d09a.chunk.js",
+    "reactPlayerFacebook.js": "/tbustma.github.io/static/js/reactPlayerFacebook.65f04961.chunk.js",
+    "reactPlayerStreamable.js": "/tbustma.github.io/static/js/reactPlayerStreamable.ec0d49c3.chunk.js",
+    "reactPlayerWistia.js": "/tbustma.github.io/static/js/reactPlayerWistia.2c2908c0.chunk.js",
+    "reactPlayerTwitch.js": "/tbustma.github.io/static/js/reactPlayerTwitch.fa7f0272.chunk.js",
+    "reactPlayerDailyMotion.js": "/tbustma.github.io/static/js/reactPlayerDailyMotion.144c58d8.chunk.js",
+    "reactPlayerMixcloud.js": "/tbustma.github.io/static/js/reactPlayerMixcloud.b17573e2.chunk.js",
+    "reactPlayerVidyard.js": "/tbustma.github.io/static/js/reactPlayerVidyard.c79b1bde.chunk.js",
+    "reactPlayerKaltura.js": "/tbustma.github.io/static/js/reactPlayerKaltura.0d52d9d5.chunk.js",
+    "reactPlayerFilePlayer.js": "/tbustma.github.io/static/js/reactPlayerFilePlayer.49d121f8.chunk.js",
+    "reactPlayerPreview.js": "/tbustma.github.io/static/js/reactPlayerPreview.1eeabd52.chunk.js",
     "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
     "index.html": "/tbustma.github.io/index.html",
-    "main.fe76596c.css.map": "/tbustma.github.io/static/css/main.fe76596c.css.map",
-    "main.7d0750f0.js.map": "/tbustma.github.io/static/js/main.7d0750f0.js.map",
+    "main.f5bf322d.css.map": "/tbustma.github.io/static/css/main.f5bf322d.css.map",
+    "main.c69da036.js.map": "/tbustma.github.io/static/js/main.c69da036.js.map",
+    "reactPlayerYouTube.e249679c.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerYouTube.e249679c.chunk.js.map",
+    "reactPlayerSoundCloud.532622db.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerSoundCloud.532622db.chunk.js.map",
+    "reactPlayerVimeo.79b9d09a.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerVimeo.79b9d09a.chunk.js.map",
+    "reactPlayerFacebook.65f04961.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerFacebook.65f04961.chunk.js.map",
+    "reactPlayerStreamable.ec0d49c3.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerStreamable.ec0d49c3.chunk.js.map",
+    "reactPlayerWistia.2c2908c0.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerWistia.2c2908c0.chunk.js.map",
+    "reactPlayerTwitch.fa7f0272.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerTwitch.fa7f0272.chunk.js.map",
+    "reactPlayerDailyMotion.144c58d8.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerDailyMotion.144c58d8.chunk.js.map",
+    "reactPlayerMixcloud.b17573e2.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerMixcloud.b17573e2.chunk.js.map",
+    "reactPlayerVidyard.c79b1bde.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerVidyard.c79b1bde.chunk.js.map",
+    "reactPlayerKaltura.0d52d9d5.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerKaltura.0d52d9d5.chunk.js.map",
+    "reactPlayerFilePlayer.49d121f8.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerFilePlayer.49d121f8.chunk.js.map",
+    "reactPlayerPreview.1eeabd52.chunk.js.map": "/tbustma.github.io/static/js/reactPlayerPreview.1eeabd52.chunk.js.map",
     "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe76596c.css",
-    "static/js/main.7d0750f0.js"
+    "static/css/main.f5bf322d.css",
+    "static/js/main.c69da036.js"
   ]
 }
