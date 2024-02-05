@@ -1,10 +1,19 @@
+import { useEffect, useRef } from "react";
 import "./App.css";
-
+import ReactPlayer from "react-player";
 function App() {
+  const videoRef = useRef(undefined);
+  useEffect(() => {
+    videoRef.current.defaultMuted = true;
+    videoRef.current.play = true;
+  });
   return (
     <div className="App">
       <header className="App-header">
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary garamond">
+        <nav
+          class="navbar fixed-top navbar-expand-lg bg-body-tertiary garamond"
+          id="Nav"
+        >
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -28,7 +37,7 @@ function App() {
                 <a class="nav-link" href="#" target="_blank">
                   EVENT DETAILS
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#Travel">
                   TRAVEL & STAY
                 </a>
                 <a class="nav-link" href="#FAQs">
@@ -42,7 +51,14 @@ function App() {
                 </a>
               </div>
             </div>
-            <div class="logo">K & T</div>
+            <div class="logo">
+              <img
+                width="95px"
+                height="95px"
+                alt="logo"
+                src={process.env.PUBLIC_URL + "/logo.png"}
+              />
+            </div>
             <div class="nav-link sorry" href="#">
               <div class="cinzel text-center">03.09.25</div>
               <div class="garamond">RANCHO SHIBUMI, TODOS SANTOS, MX</div>
@@ -51,15 +67,26 @@ function App() {
         </nav>
       </header>
       <main>
-        <section class="mt-nav">
+        <div class="" id="Our">
+          <video ref={videoRef} loop autoPlay muted playsInline>
+            <source
+              src={process.env.PUBLIC_URL + "/videos/beach.mp4"}
+              type="video/mp4"
+            />
+          </video>
+
+          <div id="OurStory"></div>
+        </div>
+        <section class="mt-4">
           <div class="d-lg-flex text-center">
-            <div class="p-4">
-              <img src="" alt="" />
+            <div>
+              <img
+                class="first-img"
+                src={process.env.PUBLIC_URL + "/ring.png"}
+              />
             </div>
-            <div class="p-4">
-              <h3 class="seasons" id="OurStory">
-                OUR STORY
-              </h3>
+            <div class="p-4 first-section">
+              <h3 class="seasons">OUR STORY</h3>
               <p class="garamond">
                 On a late evening in March 2019, Kendall and her girlfriends
                 walked into Silver Clouds, making their final stop for the
@@ -72,7 +99,7 @@ function App() {
                 dancing, and from that moment on, the rest is history!
               </p>
             </div>
-            <div class="p-4">
+            <div class="p-4 first-section">
               <h3 class="seasons">HOW HE ASKED</h3>
               <p class="garamond">
                 On a late evening in March 2019, Kendall and her girlfriends
@@ -96,36 +123,58 @@ function App() {
         <section>
           <div class="d-lg-flex space-between text-center">
             <div>
-              <h3 class="seasons">CEREMONY</h3>
+              <h3 class="seasons title">CEREMONY</h3>
               <p class="garamond">on the beach</p>
-              <img src="" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/ceremony.png"}
+                alt="ceremony"
+                width="90%"
+              />
             </div>
             <div>
-              <h3 class="seasons"> COCKTAIL HOUR</h3>
+              <h3 class="seasons title"> COCKTAIL HOUR</h3>
               <p class="garamond">at the palapa</p>
-              <img src="" alt="" />
+              <img
+                src={process.env.PUBLIC_URL + "/cocktail.png"}
+                alt="cocktail"
+                width="90%"
+              />
             </div>
             <div>
-              <h3 class="seasons">RECEPTION</h3>
+              <h3 class="seasons title">RECEPTION</h3>
               <p class="garamond">at the hacidena</p>
-              <img src="" alt="" />
+              <img
+                id="Travel"
+                src={process.env.PUBLIC_URL + "/reception.png"}
+                alt="reception"
+                width="90%"
+              />
             </div>
           </div>
         </section>
         <section>
           <div class="d-lg-flex space-between text-center">
-            <div class="p-4">
-              <h3 class="seasons">HOTEL STAY</h3>
-              <p class="garamond">
-                Please note, for your convenience, a room block has been placed
-                at the Corazón Cabo Resort & Spa. Special rates will be
-                available from March 6th to March 15th. To make a reservation,
-                please email reservations@corazoncabo.com or call 800-753-5069
-                and mention Taylor & Kendall Bustamante’s wedding or use the
-                code “2403KENDAL”
-              </p>
+            <div class=" grid p-4 space-between">
+              <div>
+                <h3 class="seasons">HOTEL STAY</h3>
+                <p class="garamond">
+                  Please note, for your convenience, a room block has been
+                  placed at the Corazón Cabo Resort & Spa. Special rates will be
+                  available from March 6th to March 15th. To make a reservation,
+                  please email reservations@corazoncabo.com or call 800-753-5069
+                  and mention Taylor & Kendall Bustamante’s wedding or use the
+                  code “2403KENDAL”
+                </p>
+              </div>
+              <div class="middle-grid">
+                <img
+                  src={process.env.PUBLIC_URL + "/hotel.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
-            <div class="p-4">
+            <div class="grid space-between p-4">
               <h3 class="seasons">TRANSPORTATION</h3>
               <p class="garamond">
                 Transportation will be provided from the Corazón Cabo Resort to
@@ -135,6 +184,13 @@ function App() {
                 parking at the property. Please check back closer to our date
                 for departure times.
               </p>
+              <div class="middle-grid">
+                <img
+                  src={process.env.PUBLIC_URL + "/transportation.png"}
+                  alt="reception"
+                  width="90%"
+                />
+              </div>
             </div>
             <div class="p-4">
               <h3 class="seasons">AIRPORT</h3>
@@ -147,26 +203,17 @@ function App() {
                 through Cabo Airport Shuttle. Please note, Ubers are NOT
                 available from the airport. * DO NOT FORGET YOUR PASSPORT *
               </p>
+              <img
+                src={process.env.PUBLIC_URL + "/plane.png"}
+                alt="reception"
+                width="90%"
+                id="FAQs"
+              />
             </div>
           </div>
         </section>
         <section>
-          <div class="d-lg-flex space-between text-center">
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div>
-              <img src="" alt="" />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="seasons-it px-5 fs-5" id="FAQs">
-            frequently asked questions
-          </div>
+          <div class="seasons-it px-5 fs-5">frequently asked questions</div>
         </section>
         <section>
           <div class="d-sm-flex flex-wrap space-between text-center px-5">

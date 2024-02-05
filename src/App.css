@@ -1,9 +1,25 @@
-nav {
-  padding: 40px !important;
+#Nav {
+  padding: 25px !important;
+  font-size: 11px !important;
+  background-color: #fbfaf6 !important;
+  /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.first-section {
+  display: grid;
+  align-content: center;
+}
+.first-img {
+  display: none;
 }
 .garamond {
   font-family: "EB Garamond", serif;
   color: rgb(123, 109, 109);
+}
+#Our {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .seasons {
@@ -16,14 +32,11 @@ nav {
 .cinzel {
   font-family: "Cinzel Decorative", serif;
 }
-nav {
-  font-size: 11px !important;
-}
+
 .mt-nav {
   margin-top: 130px;
 }
 .logo {
-  height: 50px;
   padding-right: 2rem;
   font-size: 32px !important;
 }
@@ -33,12 +46,25 @@ nav {
   align-self: stretch;
   width: 100%;
 }
-
+.title {
+  margin-top: 1rem;
+}
 .d-lg-flex > * {
   flex: 1;
 }
 .sorry {
   display: none;
+}
+.grid {
+  display: grid;
+}
+.middle-grid {
+  display: grid;
+  align-content: end;
+}
+
+.middle-grid > * {
+  justify-self: center;
 }
 
 .grid-4,
@@ -59,13 +85,29 @@ nav {
   .sorry {
     display: block;
   }
+  #Our {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .first-img {
+    width: 100%;
+    display: block;
+  }
+  .title {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1200px) {
   section {
     padding-inline: 10%;
     padding-block: 2rem;
   }
+  #Nav {
+    padding-inline: 150px !important;
+  }
   .d-sm-flex > * {
     max-width: 33%;
+    display: grid;
+    align-content: normal;
   }
 }
