@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.19a6d571.css",
-    "main.js": "/tbustma.github.io/static/js/main.aaf8f90c.js",
+    "main.css": "/tbustma.github.io/static/css/main.52946c1f.css",
+    "main.js": "/tbustma.github.io/static/js/main.77675111.js",
     "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
     "static/media/Fontspring-theseasons-reg.otf": "/tbustma.github.io/static/media/Fontspring-theseasons-reg.2c9625941d4c89994b85.otf",
     "index.html": "/tbustma.github.io/index.html",
-    "main.19a6d571.css.map": "/tbustma.github.io/static/css/main.19a6d571.css.map",
-    "main.aaf8f90c.js.map": "/tbustma.github.io/static/js/main.aaf8f90c.js.map",
+    "main.52946c1f.css.map": "/tbustma.github.io/static/css/main.52946c1f.css.map",
+    "main.77675111.js.map": "/tbustma.github.io/static/js/main.77675111.js.map",
     "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19a6d571.css",
-    "static/js/main.aaf8f90c.js"
+    "static/css/main.52946c1f.css",
+    "static/js/main.77675111.js"
   ]
 }
