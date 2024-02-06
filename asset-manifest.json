@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.75eaadc3.css",
-    "main.js": "/tbustma.github.io/static/js/main.5428d538.js",
+    "main.css": "/tbustma.github.io/static/css/main.cee77f34.css",
+    "main.js": "/tbustma.github.io/static/js/main.5870d128.js",
     "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
     "static/media/Cormorant-SemiBold.ttf": "/tbustma.github.io/static/media/Cormorant-SemiBold.949e3c1866de5bd4eb3a.ttf",
     "static/media/font.woff": "/tbustma.github.io/static/media/font.ae1d15366db73d42bdac.woff",
     "static/media/font.woff2": "/tbustma.github.io/static/media/font.771d88fa87d7c91d5d79.woff2",
     "index.html": "/tbustma.github.io/index.html",
-    "main.75eaadc3.css.map": "/tbustma.github.io/static/css/main.75eaadc3.css.map",
-    "main.5428d538.js.map": "/tbustma.github.io/static/js/main.5428d538.js.map",
+    "main.cee77f34.css.map": "/tbustma.github.io/static/css/main.cee77f34.css.map",
+    "main.5870d128.js.map": "/tbustma.github.io/static/js/main.5870d128.js.map",
     "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75eaadc3.css",
-    "static/js/main.5428d538.js"
+    "static/css/main.cee77f34.css",
+    "static/js/main.5870d128.js"
   ]
 }
