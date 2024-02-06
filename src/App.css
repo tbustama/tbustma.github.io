@@ -1,8 +1,33 @@
 #Nav {
-  padding: 25px !important;
+  padding: 25px 25px 10px 25px !important;
   font-size: 11px !important;
   background-color: #fbfaf6 !important;
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
+}
+
+button > span {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.navbar-toggler {
+  border: none !important;
+}
+
+#Travel {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(123, 109, 109);
+}
+.ls-4 {
+  letter-spacing: 5px;
+}
+
+.sub-head {
+  font-size: 20px;
 }
 
 #modal-close {
@@ -10,6 +35,9 @@
   right: 0;
   margin: 12px 12px 0;
   opacity: 1;
+}
+.padding-5 {
+  padding: 0;
 }
 
 #Modal-Image {
@@ -22,6 +50,10 @@
 .first-img {
   display: none;
 }
+.d-sm-flex > .faqs {
+  align-content: baseline;
+}
+
 .garamond {
   font-family: "EB Garamond", serif;
   color: rgb(123, 109, 109);
@@ -33,14 +65,25 @@
 }
 
 .seasons {
-  font-family: "Spectral", serif;
+  font-family: "TheSeasonsRegular", serif;
 }
-.seasons-it {
-  font-family: "Spectral", serif;
+
+.seasons-sm {
+  font-family: "TheSeasonsRegular", serif;
+}
+.garamond-it {
+  font-family: "Garamond", serif;
   font-style: italic;
+  font-size: 16px;
 }
 .cinzel {
   font-family: "Cinzel Decorative", serif;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+.rancho {
+  letter-spacing: 2px;
+  font-size: 10px;
 }
 
 .mt-nav {
@@ -49,6 +92,14 @@
 .logo {
   padding-right: 2rem;
   font-size: 32px !important;
+}
+.space-center {
+  justify-content: center;
+  align-self: stretch;
+  width: 100%;
+}
+.space-center > a {
+  margin-inline: 2%;
 }
 
 .space-between {
@@ -82,8 +133,19 @@
   display: grid;
   grid-auto-flow: column;
 }
+.padding-l {
+  padding-left: 0;
+}
 
 @media (min-width: 576px) {
+  .garamond-it {
+    font-family: "Garamond", serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+  #Nav {
+    padding-bottom: 25px !important;
+  }
   .d-sm-flex > * {
     max-width: 50%;
   }
@@ -92,6 +154,13 @@
   }
 }
 @media (min-width: 992px) {
+  #Travel {
+    margin-bottom: 0;
+  }
+  .seasons {
+    font-size: 19px;
+    line-height: 24px;
+  }
   .sorry {
     display: block;
   }
@@ -100,7 +169,7 @@
     flex-direction: column;
   }
   .first-img {
-    width: 100%;
+    width: 400px;
     display: block;
   }
   .title {
@@ -108,6 +177,12 @@
   }
 }
 @media (min-width: 1200px) {
+  .padding-5 {
+    padding: 2rem 2rem 2rem 0;
+  }
+  .padding-l {
+    padding-left: 2rem;
+  }
   section {
     padding-inline: 10%;
     padding-block: 2rem;

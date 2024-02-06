@@ -8,8 +8,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  scroll-padding-top: 145px; /* height of sticky header */
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "TheSeasonsRegular";
+  src: url("./TheSeasonsRegular/font.woff2") format("woff2"),
+    url("./TheSeasonsRegular/font.woff") format("woff");
 }
