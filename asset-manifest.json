@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/www.bustamantewedding.com/static/css/main.785c06b3.css",
-    "main.js": "/www.bustamantewedding.com/static/js/main.1eb86f81.js",
-    "static/js/592.d7a7b80c.chunk.js": "/www.bustamantewedding.com/static/js/592.d7a7b80c.chunk.js",
-    "static/media/font.woff": "/www.bustamantewedding.com/static/media/font.ae1d15366db73d42bdac.woff",
-    "static/media/font.woff2": "/www.bustamantewedding.com/static/media/font.771d88fa87d7c91d5d79.woff2",
-    "index.html": "/www.bustamantewedding.com/index.html",
-    "main.785c06b3.css.map": "/www.bustamantewedding.com/static/css/main.785c06b3.css.map",
-    "main.1eb86f81.js.map": "/www.bustamantewedding.com/static/js/main.1eb86f81.js.map",
-    "592.d7a7b80c.chunk.js.map": "/www.bustamantewedding.com/static/js/592.d7a7b80c.chunk.js.map"
+    "main.css": "/static/css/main.27d1cf50.css",
+    "main.js": "/static/js/main.815d9c1d.js",
+    "static/js/592.d7a7b80c.chunk.js": "/static/js/592.d7a7b80c.chunk.js",
+    "static/media/font.woff": "/static/media/font.ae1d15366db73d42bdac.woff",
+    "static/media/font.woff2": "/static/media/font.771d88fa87d7c91d5d79.woff2",
+    "index.html": "/index.html",
+    "main.27d1cf50.css.map": "/static/css/main.27d1cf50.css.map",
+    "main.815d9c1d.js.map": "/static/js/main.815d9c1d.js.map",
+    "592.d7a7b80c.chunk.js.map": "/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.785c06b3.css",
-    "static/js/main.1eb86f81.js"
+    "static/css/main.27d1cf50.css",
+    "static/js/main.815d9c1d.js"
   ]
 }
