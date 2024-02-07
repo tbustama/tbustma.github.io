@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.ba419b9a.css",
-    "main.js": "/tbustma.github.io/static/js/main.04b68cb8.js",
+    "main.css": "/tbustma.github.io/static/css/main.603b93a2.css",
+    "main.js": "/tbustma.github.io/static/js/main.2ea3fe06.js",
     "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
     "static/media/font.woff": "/tbustma.github.io/static/media/font.ae1d15366db73d42bdac.woff",
     "static/media/font.woff2": "/tbustma.github.io/static/media/font.771d88fa87d7c91d5d79.woff2",
     "index.html": "/tbustma.github.io/index.html",
-    "main.ba419b9a.css.map": "/tbustma.github.io/static/css/main.ba419b9a.css.map",
-    "main.04b68cb8.js.map": "/tbustma.github.io/static/js/main.04b68cb8.js.map",
+    "main.603b93a2.css.map": "/tbustma.github.io/static/css/main.603b93a2.css.map",
+    "main.2ea3fe06.js.map": "/tbustma.github.io/static/js/main.2ea3fe06.js.map",
     "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba419b9a.css",
-    "static/js/main.04b68cb8.js"
+    "static/css/main.603b93a2.css",
+    "static/js/main.2ea3fe06.js"
   ]
 }
