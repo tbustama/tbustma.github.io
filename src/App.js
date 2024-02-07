@@ -20,7 +20,7 @@ function App() {
       setTimeout(() => {
         element.classList.add("collapse");
         element.classList.remove("collapsing");
-      }, 300);
+      }, 0);
     }
   };
 
@@ -107,55 +107,72 @@ function App() {
               type="video/mp4"
             />
           </video>
-
-          <div></div>
+        </div>
+        <div class="mobile-welcome" href="#">
+          <div class="mobile-date">
+            <div class="cinzel text-center">03.09.25</div>
+          </div>
+          <div class="text-center">
+            <div class="garamond mobile-name">KENDALL AND TAYLOR</div>
+            <div class="joyful">
+              joyfully invite you to their wedding celebration
+            </div>
+          </div>
+          <img
+            class="mobile-img"
+            src={process.env.PUBLIC_URL + "/shabumi.png"}
+          />
         </div>
         <section class="mt-4">
           <div class="d-lg-flex text-center" id="OurStory">
-            <div>
+            <div class="pew">
               <img
                 class="first-img"
                 src={process.env.PUBLIC_URL + "/ring.png"}
               />
             </div>
-            <div class="padding-5 padding-l">
-              <h3 class="garamond ls-4">OUR STORY</h3>
-              <p class="seasons p-3">
-                On a late evening in March 2019, Kendall and her girlfriends
-                walked into Silver Clouds, making their final stop for the
-                night. In the lively crowd of the infamous San Francisco karaoke
-                bar, Kendall unexpectedly found herself chatting with a stranger
-                (whom she found quite charming). Mistaking him for her friend's
-                Hinge Date, Taylor took on the role of "Chris" until Kendall's
-                friends quickly clarified the mix-up. Unfazed by the confusion,
-                Taylor and Kendall spend the rest of the evening flirting and
-                dancing, and from that moment on, the rest is history!
-              </p>
-            </div>
-            <div class="padding-5">
-              <h3 class="garamond ls-4">HOW HE ASKED</h3>
-              <p class="seasons p-3">
-                In May 2023, Kendall and Taylor booked a trip to Cabo San Lucas.
-                Taylor took Kendall for her first time the year they met. After
-                finding their favorite local spots and creating long lasting
-                memories in Cabo, it’s evolved into their favorite place to
-                vacation. Although Kendall had been hinting to Taylor about
-                taking the next step in their relationship to get engaged, she
-                had absolutely no idea the ring was coming during that week in
-                Cabo. Taylor popped the question on May 21st at Kendalls “dream”
-                resort The Waldorf Astoria during sunset. It was the perfect
-                evening they will both cherish forever.
-              </p>
-              <div></div>
+            <div class="main-story">
+              <div class="padding-5 padding-l">
+                <div class="">
+                  <h3 class="garamond ls-4">OUR STORY</h3>
+                  <p class="seasons p-3">
+                    On a late evening in March 2019, Kendall and her girlfriends
+                    walked into Silver Clouds, making their final stop for the
+                    night. In the lively crowd of the infamous San Francisco
+                    karaoke bar, Kendall unexpectedly found herself chatting
+                    with a stranger (whom she found quite charming). Mistaking
+                    him for her friend's Hinge Date, Taylor took on the role of
+                    "Chris" until Kendall's friends quickly clarified the
+                    mix-up. Unfazed by the confusion, Taylor and Kendall spent
+                    the rest of the evening flirting and dancing, and from that
+                    moment on, the rest is history!
+                  </p>
+                </div>
+              </div>
+              <div class="padding-5">
+                <div class="">
+                  <h3 class="garamond ls-4">HOW HE ASKED</h3>
+                  <p class="seasons p-3">
+                    In May 2023, Kendall and Taylor booked a trip to Cabo.
+                    Taylor took Kendall for her first time the year they met.
+                    After finding their favorite local spots and creating long
+                    lasting memories in Cabo, it’s evolved into their favorite
+                    place to vacation. Although Kendall had been hinting to
+                    Taylor about taking the next step in their relationship, she
+                    had absolutely no idea the ring was coming that week. Taylor
+                    popped the question on May 21st at Kendalls “dream” resort
+                    The Waldorf Astoria during sunset. It was the perfect
+                    evening they will both cherish forever.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section>
-          <div class="garamond-it px-5" id="Event">
+          <div class="garamond-it p-4" id="Event">
             please join us as we walk down the isle
           </div>
-        </section>
-        <section>
           <div class="d-lg-flex space-between text-center">
             <div>
               <h3 class="garamond ls-4 title">CEREMONY</h3>
@@ -187,12 +204,11 @@ function App() {
             </div>
           </div>
         </section>
+
         <section>
-          <div class="garamond-it px-5" id="TravelStay">
-            travel & stay
+          <div class="garamond-it px-4 pt-4 pb-3" id="TravelStay">
+            travel and stay
           </div>
-        </section>
-        <section>
           <div class="d-lg-flex space-between text-center">
             <div class=" grid p-4 space-between">
               <div>
@@ -216,7 +232,7 @@ function App() {
                 <img
                   src={process.env.PUBLIC_URL + "/hotel.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                 />
               </div>
             </div>
@@ -236,7 +252,7 @@ function App() {
                 <img
                   src={process.env.PUBLIC_URL + "/transportation.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                 />
               </div>
             </div>
@@ -261,23 +277,22 @@ function App() {
                 <img
                   src={process.env.PUBLIC_URL + "/plane.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                 />
               </div>
             </div>
           </div>
         </section>
+
         <section>
-          <div class="garamond-it px-5" id="FAQs">
+          <div class="garamond-it p-4" id="FAQs">
             frequently asked questions
           </div>
-        </section>
-        <section>
-          <div class="d-sm-flex flex-wrap space-between text-center px-5">
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">
+          <div class="d-sm-flex flex-wrap space-between text-center">
+            <div class="p-3 faqs">
+              <h5 class="guest garamond pb-3">
                 WHERE ARE THE CEREMONY & RECEPTION TAKING PLACE?
-              </h4>
+              </h5>
               <p class="seasons-sm">
                 The Ceremony and Reception will both take place at Rancho
                 Shibumi, a private property in Todos Santos, about 15 minutes
@@ -285,8 +300,10 @@ function App() {
                 place outdoors - a light jacket may be needed.
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">AM I ALLOWED TO BRING A GUEST?</h4>
+            <div class="p-3 faqs">
+              <h5 class="guest garamond pb-3">
+                AM I ALLOWED TO BRING A GUEST?
+              </h5>
               <p class="seasons-sm">
                 Due to limited space, we are only able to accommodate those
                 guests formally invited on your wedding invitation. If you
@@ -294,8 +311,10 @@ function App() {
                 for understanding!
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">WILL TRANSPORTATION BE PROVIDED?</h4>
+            <div class="p-3 faqs">
+              <h5 class="guest garamond pb-3">
+                WILL TRANSPORTATION BE PROVIDED?
+              </h5>
               <p class="seasons-sm">
                 Yes! We have a shuttle leaving from the Corazón Cabo Resort and
                 Spa to and from the venue on Sunday, March 9th. Please check
@@ -303,8 +322,8 @@ function App() {
                 details.
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">PASSPORTS</h4>
+            <div class="p-3 faqs">
+              <h5 class="garamond pb-3">PASSPORTS</h5>
               <p class="seasons-sm">
                 Do not forget your passport! Please double check to make sure
                 your passport does not expire before September 2024 as you will
@@ -320,8 +339,8 @@ function App() {
                 for a passport as soon as possible.
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">WHAT IS THE DRESS CODE?</h4>
+            <div class="p-3 faqs">
+              <h5 class="garamond pb-3">WHAT IS THE DRESS CODE?</h5>
               <p class="seasons-sm">
                 We would love to see our family & friends get dressed up for our
                 big day! Dress code is formal attire for the evening. Gentlemen,
@@ -329,8 +348,8 @@ function App() {
                 length dresses- thicker heels are recommended!
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">GIFTS</h4>
+            <div class="p-3 faqs">
+              <h5 class="garamond pb-3">GIFTS</h5>
               <p class="seasons-sm">
                 We are truly grateful for your presence on our special day, and
                 your love and support mean the world to us. Your attendance is
@@ -338,8 +357,8 @@ function App() {
                 give a gift!
               </p>
             </div>
-            <div class="p-4 faqs">
-              <h4 class="garamond pb-3">WHEN IS THE RSVP DEADLINE?</h4>
+            <div class="p-3 faqs">
+              <h5 class="garamond pb-3">WHEN IS THE RSVP DEADLINE?</h5>
               <p class="seasons-sm">
                 Please RSVP no later than January 1st, 2025. RSVP instructions
                 will be given in the formal invitation. We can’t wait to
@@ -348,45 +367,45 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section class="section-gallery">
           <div>
             <div class="grid-4 text-center" id="Gallery">
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row1pic1.png"}
                   alt="row1"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row1pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row1pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 {" "}
                 <img
                   src={process.env.PUBLIC_URL + "/row1pic4.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -394,31 +413,31 @@ function App() {
               </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row2pic1.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row2pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row2pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -426,42 +445,42 @@ function App() {
               </div>
             </div>
             <div class="grid-4 text-center">
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row3pic1.png"}
                   alt="row3"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row3pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row3pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 {" "}
                 <img
                   src={process.env.PUBLIC_URL + "/row3pic4.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -469,31 +488,31 @@ function App() {
               </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row4pic1.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row4pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row4pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -501,42 +520,42 @@ function App() {
               </div>
             </div>
             <div class="grid-4 text-center">
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row5pic1.png"}
                   alt="row3"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row5pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 <img
                   src={process.env.PUBLIC_URL + "/row5pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-6">
+              <div class="p-3 g-col-6">
                 {" "}
                 <img
                   src={process.env.PUBLIC_URL + "/row5pic4.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -544,31 +563,31 @@ function App() {
               </div>
             </div>
             <div class="grid-3 text-center">
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row6pic1.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row6pic2.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                 />
               </div>
-              <div class="p-2 g-col-4">
+              <div class="p-3 g-col-4">
                 <img
                   src={process.env.PUBLIC_URL + "/row6pic3.png"}
                   alt="reception"
-                  width="90%"
+                  width="100%"
                   onClick={(e) => handleImage(e)}
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"

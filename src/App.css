@@ -5,6 +5,39 @@
   /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
 }
 
+.mobile-name {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.joyful {
+  font-size: 13px;
+  margin-bottom: 50px;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+.mobile-img {
+  width: 100%;
+}
+
+.mobile-date {
+  margin-block: 30px;
+}
+.mobile-date > .cinzel {
+  font-size: 12px;
+}
+.mobile-date > .rancho {
+  text-align: center;
+}
+
+h3.garamond {
+  font-size: 25px;
+}
+.container-fluid > .navbar-collapse {
+  padding-inline: 15px;
+}
+
 button > span {
   font-size: 11px;
   letter-spacing: 2px;
@@ -72,7 +105,8 @@ a {
   font-family: "TheSeasonsRegular", serif;
 }
 .garamond-it {
-  font-family: "Garamond", serif;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1.5px;
   font-style: italic;
   font-size: 16px;
 }
@@ -90,16 +124,16 @@ a {
   margin-top: 130px;
 }
 .logo {
-  padding-right: 2rem;
+  padding-inline: 1rem;
   font-size: 32px !important;
 }
 .space-center {
-  justify-content: center;
+  justify-content: space-between;
   align-self: stretch;
   width: 100%;
 }
 .space-center > a {
-  margin-inline: 2%;
+  margin-inline: 1%;
 }
 
 .space-between {
@@ -139,10 +173,16 @@ a {
 
 @media (min-width: 576px) {
   .garamond-it {
-    font-family: "Garamond", serif;
-    font-style: italic;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+    margin-left: 5%;
   }
+
+  #Event {
+    letter-spacing: 3px;
+  }
+
   #Nav {
     padding-bottom: 25px !important;
   }
@@ -154,22 +194,34 @@ a {
   }
 }
 @media (min-width: 992px) {
+  .mobile-welcome {
+    display: none;
+  }
+  .main-story {
+    display: grid;
+    align-content: center;
+    grid-auto-flow: column;
+  }
+  .d-lg-flex > .pew {
+    flex: 0;
+  }
   #Travel {
     margin-bottom: 0;
   }
   .seasons {
-    font-size: 19px;
+    font-size: 17px;
     line-height: 24px;
   }
   .sorry {
     display: block;
+    padding-right: 25px;
   }
   #Our {
-    margin-top: 0;
+    margin-top: 130px;
     flex-direction: column;
   }
   .first-img {
-    width: 400px;
+    width: 460px;
     display: block;
   }
   .title {
@@ -177,14 +229,24 @@ a {
   }
 }
 @media (min-width: 1200px) {
+  h5.guest {
+    min-height: 64px;
+  }
+  .space-center > a {
+    margin-top: 18px;
+    margin-inline: 2%;
+  }
   .padding-5 {
     padding: 2rem 2rem 2rem 0;
   }
   .padding-l {
     padding-left: 2rem;
   }
+  .section-gallery {
+    padding-inline: 1rem;
+  }
   section {
-    padding-inline: 10%;
+    padding-inline: 5%;
     padding-block: 2rem;
   }
   #Nav {
