@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tbustma.github.io/static/css/main.4b4d23fc.css",
+    "main.css": "/tbustma.github.io/static/css/main.98945669.css",
     "main.js": "/tbustma.github.io/static/js/main.7fba9332.js",
     "static/js/592.d7a7b80c.chunk.js": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js",
     "static/media/font.woff": "/tbustma.github.io/static/media/font.ae1d15366db73d42bdac.woff",
     "static/media/font.woff2": "/tbustma.github.io/static/media/font.771d88fa87d7c91d5d79.woff2",
     "index.html": "/tbustma.github.io/index.html",
-    "main.4b4d23fc.css.map": "/tbustma.github.io/static/css/main.4b4d23fc.css.map",
+    "main.98945669.css.map": "/tbustma.github.io/static/css/main.98945669.css.map",
     "main.7fba9332.js.map": "/tbustma.github.io/static/js/main.7fba9332.js.map",
     "592.d7a7b80c.chunk.js.map": "/tbustma.github.io/static/js/592.d7a7b80c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b4d23fc.css",
+    "static/css/main.98945669.css",
     "static/js/main.7fba9332.js"
   ]
 }
